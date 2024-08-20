@@ -16,7 +16,6 @@ export default function Nav({ numMenu }) {
         <img src={logo} />
       </Link>
       <ul className="navBar_links">
-        <img src={logo} className="logoBurger" />
         <li className="navBar_item efect2">
           <Link
             to="/"
@@ -28,7 +27,7 @@ export default function Nav({ numMenu }) {
         </li>
         <li className="navBar_item efect2">
           <Link
-            to="presentation"
+            to="/presentation"
             className={`navBar_link ${numMenu === 2 && "acti"}`}
             onClick={() => setOpenClose(false)}
           >

@@ -12,7 +12,10 @@ export default function Home({ setNumMenu }) {
     <div className="home">
       <section>
         <h2>
-          Produits <span>sidérurgiques</span>
+          Produits{" "}
+          <Link to="/produits-siderurgiques" className="blackLink">
+            <span>sidérurgiques</span>
+          </Link>
         </h2>
         <div className="row">
           <img src={Img} alt="Accueil" />

@@ -8,12 +8,14 @@
 }
 :root {
   --color-primaire-loppin: #37813a;
+  --color-primaire-loppin: #0b9967;
   --imgDef: url("./assets/def.webp");
   --imgDef2: url("./assets/def2.webp");
   --imgDef3: url("./assets/def3.webp");
   --imgDef4: url("./assets/def4.webp");
   --imgDef5: url("./assets/def5.webp");
   --imgDef6: url("./assets/def6.webp");
+  --box-shadow: 0.5rem 0.5rem 20px;
 }
 body {
   scroll-behavior: smooth;
@@ -28,6 +30,9 @@ body {
   padding: 1rem;
   background-color: var(--color-primaire-loppin);
   color: #fff;
+  .navBar_logo {
+    z-index: 1;
+  }
 }
 .navBar_item {
   padding-left: 0.5rem;
@@ -47,9 +52,6 @@ body {
   background: transparent;
   border: none;
   color: inherit;
-  display: none;
-}
-.logoBurger {
   display: none;
 }
 ul {
@@ -77,6 +79,7 @@ button {
     margin: 3rem;
     background-color: #fff;
     border-radius: 1rem;
+    box-shadow: var(--box-shadow);
     h2 {
       text-align: center;
       padding-block: 1rem;
@@ -90,8 +93,11 @@ button {
   .row {
     display: flex;
     div {
+      display: grid;
+      gap: 1rem;
+      padding: 1rem;
       p {
-        margin: 1rem;
+        text-align: center;
       }
     }
     img {
@@ -174,6 +180,7 @@ footer {
     align-items: center;
     border: solid var(--color-primaire-loppin);
     border-radius: 1rem;
+    box-shadow: var(--box-shadow);
     h1 {
       margin: 1rem;
       font-size: x-large;
@@ -213,7 +220,7 @@ footer {
       text-transform: uppercase;
       span {
         font-weight: bold;
-        text-decoration: underline;
+        // text-decoration: underline;
       }
     }
   }
@@ -341,6 +348,7 @@ footer {
       gap: 1rem;
       border: solid var(--color-primaire-loppin);
       border-radius: 1rem;
+      box-shadow: var(--box-shadow);
       h3 {
         strong {
           color: var(--color-primaire-loppin);
@@ -435,16 +443,18 @@ footer {
     }
   }
 }
+.blackLink {
+  color: black;
+  text-decoration: underline var(--color-primaire-loppin);
+}
+.whiteLink {
+  color: white;
+  text-decoration: underline var(--color-primaire-loppin);
+}
 .media {
   display: none;
 }
 @media (orientation: portrait) {
-  .logoBurger {
-    display: block;
-    position: fixed;
-    left: 1rem;
-    top: 1rem;
-  }
   .navBar_links {
     flex-direction: column;
     justify-content: center;
@@ -550,9 +560,16 @@ footer {
   }
 } // exeption pour menu
 @media (orientation: landscape) {
+  body {
+    font-size: large;
+  }
   .home {
     .row {
-      display: flex;
+      div {
+        p {
+          text-align: initial;
+        }
+      }
       img {
         display: initial;
       }

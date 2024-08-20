@@ -83,7 +83,9 @@ export default function ProduitsSiderurgiques({
         <h1>
           Produits
           <br />
-          <span>sidérurgiques</span>
+          <Link to="/produits-siderurgiques" className="whiteLink">
+            <span>sidérurgiques</span>
+          </Link>
         </h1>
         <p>
           Depuis toujours, <strong>Loppin &amp; Jean</strong>&nbsp;s’est fixé

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Presentation({ setNumMenu }) {
   useEffect(() => {
@@ -88,7 +89,12 @@ export default function Presentation({ setNumMenu }) {
         </div>
       </section>
       <section className="produits-siderurgiques">
-        <h1>Produits sidérurgiques</h1>
+        <h1>
+          Produits{" "}
+          <Link to="/produits-siderurgiques" className="blackLink">
+            sidérurgiques
+          </Link>
+        </h1>
         <div className="row">
           <div className="col-2">
             <div className="chiffre_prefixe"></div>
