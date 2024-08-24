@@ -28,8 +28,13 @@ body {
   background: linear-gradient(var(--color-primaire-loppin), #fff, black);
 }
 ::-webkit-scrollbar-thumb {
-  // background: #37813a;
+  background: #37813a;
+  background: url("https://www.kindpng.com/picc/m/493-4937537_stainless-steel-bar-pull-ceiling-hd-png-download.png");
+  background: url("./assets/bar.png");
   background: linear-gradient(black, var(--color-primaire-loppin));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 1rem;
 }
 .navBar {
