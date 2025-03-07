@@ -343,9 +343,14 @@ footer {
       h1 {
         font-size: 5rem;
         // font-size: xxx-large;
-        text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
-          -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black,
-          0px -2px 0 black;
+        text-shadow: 2px 2px 0 var(--color-primaire-loppin),
+          2px -2px 0 var(--color-primaire-loppin),
+          -2px 2px 0 var(--color-primaire-loppin),
+          -2px -2px 0 var(--color-primaire-loppin),
+          2px 0px 0 var(--color-primaire-loppin),
+          0px 2px 0 var(--color-primaire-loppin),
+          -2px 0px 0 var(--color-primaire-loppin),
+          0px -2px 0 var(--color-primaire-loppin);
       }
       h3 {
         p {
