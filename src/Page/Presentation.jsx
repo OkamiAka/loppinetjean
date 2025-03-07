@@ -11,8 +11,9 @@ export default function Presentation({ setNumMenu }) {
       <section className="histoire">
         <div className="date">
           <h1>
-            {new Date().getFullYear() - new Date("01/01/1925").getFullYear()}{" "}
-            ANS
+            {/* {new Date().getFullYear() - new Date("01/01/1925").getFullYear()}{" "}
+            ANS */}
+            Plus d'un siecle
           </h1>
           <h1>D'HISTOIRE</h1>
           <h3>
