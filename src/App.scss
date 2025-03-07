@@ -16,6 +16,12 @@
   --imgDef5: url("./assets/def5.webp");
   --imgDef6: url("./assets/def6.webp");
   --box-shadow: 0.5rem 0.5rem 20px;
+  --colorContoureText: var(--color-primaire-loppin);
+  --contoureText: 2px 2px 0 var(--colorContoureText),
+    2px -2px 0 var(--colorContoureText), -2px 2px 0 var(--colorContoureText),
+    -2px -2px 0 var(--colorContoureText), 2px 0px 0 var(--colorContoureText),
+    0px 2px 0 var(--colorContoureText), -2px 0px 0 var(--colorContoureText),
+    0px -2px 0 var(--colorContoureText);
 }
 body {
   scroll-behavior: smooth;
@@ -343,14 +349,7 @@ footer {
       h1 {
         font-size: 5rem;
         // font-size: xxx-large;
-        text-shadow: 2px 2px 0 var(--color-primaire-loppin),
-          2px -2px 0 var(--color-primaire-loppin),
-          -2px 2px 0 var(--color-primaire-loppin),
-          -2px -2px 0 var(--color-primaire-loppin),
-          2px 0px 0 var(--color-primaire-loppin),
-          0px 2px 0 var(--color-primaire-loppin),
-          -2px 0px 0 var(--color-primaire-loppin),
-          0px -2px 0 var(--color-primaire-loppin);
+        text-shadow: var(--contoureText);
       }
       h3 {
         p {
