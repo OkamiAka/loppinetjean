@@ -8,7 +8,7 @@
 }
 :root {
   --color-primaire-loppin: #37813a;
-  --color-primaire-loppin: #0b9967;
+  // --color-primaire-loppin: #0b9967;
   --imgDef: url("./assets/def.webp");
   --imgDef2: url("./assets/def2.webp");
   --imgDef3: url("./assets/def3.webp");
@@ -20,23 +20,23 @@
 body {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-  // background: transparent;
-  width: 0.8rem;
-}
-::-webkit-scrollbar-track {
-  background: linear-gradient(var(--color-primaire-loppin), #fff, black);
-}
-::-webkit-scrollbar-thumb {
-  background: #37813a;
-  background: url("https://www.kindpng.com/picc/m/493-4937537_stainless-steel-bar-pull-ceiling-hd-png-download.png");
-  background: url("./assets/bar.png");
-  background: linear-gradient(black, var(--color-primaire-loppin));
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1rem;
-}
+// ::-webkit-scrollbar {
+//   // background: transparent;
+//   width: 0.8rem;
+// }
+// ::-webkit-scrollbar-track {
+//   background: linear-gradient(var(--color-primaire-loppin), #fff, black);
+// }
+// ::-webkit-scrollbar-thumb {
+//   background: #37813a;
+//   background: url("https://www.kindpng.com/picc/m/493-4937537_stainless-steel-bar-pull-ceiling-hd-png-download.png");
+//   background: url("./assets/bar.png");
+//   background: linear-gradient(black, var(--color-primaire-loppin));
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   border-radius: 1rem;
+// }
 .navBar {
   display: flex;
   flex-wrap: wrap;
@@ -86,22 +86,23 @@ button {
   color: var(--color-primaire-loppin);
 }
 .home {
-  background: linear-gradient(transparent, white), var(--imgDef6);
+  // background: linear-gradient(transparent, white), var(--imgDef6);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   section {
-    border: solid 0.2rem var(--color-primaire-loppin);
+    // border: solid 0.2rem var(--color-primaire-loppin);
     margin: 3rem;
+    margin-inline: 10%;
     background-color: #fff;
-    border-radius: 1rem;
-    box-shadow: var(--box-shadow);
+    // border-radius: 1rem;
+    // box-shadow: var(--box-shadow);
     h2 {
       text-align: center;
       padding-block: 1rem;
       text-transform: uppercase;
-      border-bottom: solid 0.2rem var(--color-primaire-loppin);
+      // border-bottom: solid 0.2rem var(--color-primaire-loppin);
       span {
         text-decoration: underline var(--color-primaire-loppin);
       }
@@ -118,7 +119,7 @@ button {
       }
     }
     img {
-      border-radius: 0 0 0 0.75rem;
+      // border-radius: 0 0 0 0.75rem;
       display: none;
     }
     a {
@@ -325,30 +326,26 @@ footer {
 }
 .presentation {
   .histoire {
-    background: linear-gradient(transparent, white), var(--imgDef5);
+    background: var(--imgDef5);
+    // background: linear-gradient(transparent, white), var(--imgDef5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 5rem;
+    display: grid;
+    justify-content: center;
     .date {
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 1rem;
+      margin: 3rem;
       h1 {
-        font-size: xxx-large;
-        text-shadow: 2px 2px 0 var(--color-primaire-loppin),
-          2px -2px 0 var(--color-primaire-loppin),
-          -2px 2px 0 var(--color-primaire-loppin),
-          -2px -2px 0 var(--color-primaire-loppin),
-          2px 0px 0 var(--color-primaire-loppin),
-          0px 2px 0 var(--color-primaire-loppin),
-          -2px 0px 0 var(--color-primaire-loppin),
-          0px -2px 0 var(--color-primaire-loppin);
+        font-size: 5rem;
+        // font-size: xxx-large;
+        text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+          -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black,
+          0px -2px 0 black;
       }
       h3 {
         p {
@@ -360,16 +357,24 @@ footer {
     }
     .presentationText {
       background-color: white;
-      padding: 1rem;
+      margin: 1rem;
       display: grid;
       gap: 1rem;
-      border: solid var(--color-primaire-loppin);
-      border-radius: 1rem;
-      box-shadow: var(--box-shadow);
+      // border: solid var(--color-primaire-loppin);
+      // border-radius: 1rem;
+      // box-shadow: var(--box-shadow);
       h3 {
+        padding: 1rem;
+        padding-inline: 5rem;
         strong {
           color: var(--color-primaire-loppin);
         }
+      }
+      p {
+        padding-inline: 5rem;
+      }
+      img {
+        width: 100%;
       }
     }
   }
@@ -426,6 +431,13 @@ footer {
       }
       .scie {
         background: url(./assets/image/svg/scie.svg) no-repeat top center;
+      }
+      .Grenailleuse {
+        background: url(./assets/image/png/Grenailleuse.png) no-repeat top
+          center;
+      }
+      .Lasertube {
+        background: url(./assets/image/png/Lasertube.png) no-repeat top center;
       }
       .chiffre_chiffre {
         background-size: auto 60px;
@@ -649,6 +661,9 @@ footer {
     }
   }
   .presentation {
+    .histoire {
+      grid-template-columns: auto 50%;
+    }
     .row {
       display: flex;
       .col-2 {

@@ -21,8 +21,8 @@ export default function Home({ setNumMenu }) {
           <img src={Img} alt="Accueil" />
           <div>
             <p>
-              Présent depuis{" "}
-              {new Date().getFullYear() - new Date("01/01/1925").getFullYear()}{" "}
+              Présent depuis plus de 100{" "}
+              {/* {new Date().getFullYear() - new Date("01/01/1925").getFullYear()}{" "} */}
               ans, Loppin et Jean est aujourd’hui une entreprise incontournable
               du Grand Est. D’une petite quincaillerie fondée en 1924, Loppin et
               Jean est devenue l’un des trois plus importants négoces
@@ -34,13 +34,13 @@ export default function Home({ setNumMenu }) {
               Est, de la région Parisienne, du nord de la Bourgogne et des Hauts
               de France. Implantée à Vertus sur 4.5 hectares, les
               investissements réalisés en 2019-2020 ont porté sa capacité de
-              stockage à plus de 23 000m².
+              stockage à plus de 35 000m² dont 23.000 m² couvert.
               <br />
               Ces investissements permettent d’avoir aujourd’hui deux lignes de
-              coupe ainsi qu’une ligne de grenaillage. Avec sa propre flotte et
-              des partenariats avec des transporteurs, ce sont plus de 12
-              semi-remorques de 38T qui livrent journellement sa zone de
-              chalandise.
+              coupe ainsi qu’une ligne de grenaillage et un lasertube. Avec sa
+              propre flotte et des partenariats avec des transporteurs, ce sont
+              plus de 12 semi-remorques de 38T qui livrent journellement sa zone
+              de chalandise.
             </p>
             <p>
               Sur un marché mature, les critères de gamme, de disponibilité,

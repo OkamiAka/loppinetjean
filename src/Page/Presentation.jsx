@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import Pre from "../assets/Pre.webp";
+
 export default function Presentation({ setNumMenu }) {
   useEffect(() => {
     document.title = `Présentation`;
@@ -31,10 +33,7 @@ export default function Presentation({ setNumMenu }) {
             étendre ses domaines de compétences, pour prendre un véritable essor
             vers la fin des années 1970.
           </p>
-          <p>
-            C’est à cette époque que Monsieur Frédéric JEAN, actuel Président
-            intègre la société aux cotés de son père, Monsieur Michel JEAN.
-          </p>
+          <img src={Pre} />
         </div>
       </section>
       <section className="chiffres">
@@ -57,21 +56,21 @@ export default function Presentation({ setNumMenu }) {
           <div className="col-2">
             <div className="chiffre_prefixe"></div>
             <div className="chiffre_chiffre pictochiffreaffaire">
-              <span className="taille_chiffres_deux">53</span>
+              <span className="taille_chiffres_deux">+60</span>
               M€
             </div>
             <div className="chiffre_descriptif">
               Chiffre d’affaire <br />
-              53 millions d’euros
+              +60 millions d’euros
             </div>
           </div>
           <div className="col-2">
             <div className="chiffre_prefixe"></div>
             <div className="chiffre_chiffre pictosalaries">
-              <span className="taille_chiffres_deux">80</span>
+              <span className="taille_chiffres_deux">53</span>
             </div>
             <div className="chiffre_descriptif">
-              80
+              53
               <br />
               salariés
             </div>
@@ -100,13 +99,13 @@ export default function Presentation({ setNumMenu }) {
           <div className="col-2">
             <div className="chiffre_prefixe"></div>
             <div className="chiffre_chiffre surface">
-              <span className="taille_chiffres_defaut">23 000</span>
+              <span className="taille_chiffres_defaut">35 000</span>
               M²
             </div>
             <div className="chiffre_descriptif">
               Surface produits sidérurgiques
               <br />
-              20.000 m²
+              dont 23.000 m² couvert
             </div>
           </div>
           <div className="col-2">
@@ -125,21 +124,28 @@ export default function Presentation({ setNumMenu }) {
             <div className="chiffre_chiffre pont">
               <span className="taille_chiffres_deux">18</span>
             </div>
-            <div className="chiffre_descriptif">18 ponts roulants </div>
+            <div className="chiffre_descriptif">18 Ponts Roulants </div>
           </div>
           <div className="col-2">
             <div className="chiffre_prefixe"></div>
             <div className="chiffre_chiffre scie">
               <span className="taille_chiffres_un">3</span>
             </div>
-            <div className="chiffre_descriptif">3 scies automatiques </div>
+            <div className="chiffre_descriptif">3 Scies Automatiques </div>
           </div>
           <div className="col-2">
             <div className="chiffre_prefixe"></div>
-            <div className="chiffre_chiffre">
+            <div className="chiffre_chiffre Grenailleuse">
               <span className="taille_chiffres_un">1</span>
             </div>
             <div className="chiffre_descriptif">1 Grenailleuse </div>
+          </div>
+          <div className="col-2">
+            <div className="chiffre_prefixe"></div>
+            <div className="chiffre_chiffre Lasertube">
+              <span className="taille_chiffres_un">1</span>
+            </div>
+            <div className="chiffre_descriptif">1 Lasertube BLM</div>
           </div>
         </div>
       </section>
