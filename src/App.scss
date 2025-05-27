@@ -99,7 +99,7 @@ button {
   display: flex;
   flex-direction: column;
   .container-titre{
-    display: grid;
+    display: none;
     grid-template-columns: repeat(10 ,1fr);
     grid-template-rows: repeat(10 , 1fr);
     background-color: transparentize($color: #000000, $amount: 0.7);
@@ -115,12 +115,37 @@ button {
         color: var(--color-primaire-loppin);
       }
     }
+    .pastille {
+      margin: auto;
+      padding: 1rem;
+      border-radius: 35px;
+      color: #FFF;
+      text-align: center;
+      background-color: var(--color-primaire-loppin);
+      grid-column-start: 8;
+      grid-column-end: 11;
+      grid-row: 9;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+    }
     video{
       position: absolute;
       top: -5rem;
       z-index: -1;
       width: 100%;
     }
+  }
+  .videoBlm{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: transparentize($color: #000000, $amount: 0.1);
   }
   section {
     // border: solid 0.2rem var(--color-primaire-loppin);
@@ -622,6 +647,9 @@ footer {
     font-size: large;
   }
   .home {
+    .container-titre{
+      display: grid;
+    }
     .row {
       div {
         p {

@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 import Img from "../assets/Produits Sidérurgiques.webp";
 
@@ -8,15 +9,27 @@ export default function Home({ setNumMenu }) {
     document.title = `Accueil`;
     setNumMenu(1);
   }, []);
+
+  const [VideoBLM, setVideoBLM] = useState(false)
+
   return (
     <div className="home">
       <div class="container-titre">
 			    <h1><span>Produits</span>
-          <br/>sidérurgiques</h1>
-      <video playsinline="" autoplay="true" loop="true" muted="true" poster="https://www.loppinetjean.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/cochetconcept/video/BG-video.jpg.webp" id="bgvid">
-			    <source src="https://www.loppinetjean.com/wp-content/themes/cochetconcept/video/BG-loppin-jean.mp4" type="video/mp4"/>
-			</video>
+          <br/>Sidérurgiques</h1>
+
+		        <button onClick={()=>setVideoBLM(true)} href="https://www.youtube.com/watch?v=9ELpNmuW52s" class="pastille">
+			        <MdOutlineSlowMotionVideo size={'3rem'} />{" "}LASERTUBE (LT8.20)</button>
+
+          <video playsinline="" autoplay="true" loop="true" muted="true" poster="https://www.loppinetjean.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/cochetconcept/video/BG-video.jpg.webp" id="bgvid">
+			        <source src="https://www.loppinetjean.com/wp-content/themes/cochetconcept/video/BG-loppin-jean.mp4" type="video/mp4"/>
+			    </video>
 		    </div>
+      {VideoBLM&&
+        <div className="videoBlm" onClick={()=>setVideoBLM(false)}>
+        <iframe src="https://www.youtube.com/watch?v=9ELpNmuW52s"/>
+        </div> 
+        }
       <section>
         <h2>
           Produits{" "}
