@@ -97,10 +97,35 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
+  flex-direction: column;
+  .container-titre{
+    display: grid;
+    grid-template-columns: repeat(10 ,1fr);
+    grid-template-rows: repeat(10 , 1fr);
+    background-color: transparentize($color: #000000, $amount: 0.7);
+    width: 100%;
+    height: 45rem;
+    h1{
+      font-size: 5rem;
+      grid-column: 3;
+      grid-row: 4;
+      color: #fff;
+      span{
+        background-color: #fff;
+        color: var(--color-primaire-loppin);
+      }
+    }
+    video{
+      position: absolute;
+      top: -5rem;
+      z-index: -1;
+      width: 100%;
+    }
+  }
   section {
     // border: solid 0.2rem var(--color-primaire-loppin);
-    margin: 3rem;
-    margin-inline: 10%;
+    padding: 2rem;
+    padding-inline: 10%;
     background-color: #fff;
     // border-radius: 1rem;
     // box-shadow: var(--box-shadow);
@@ -137,7 +162,7 @@ button {
   }
 }
 footer {
-  background-color: #222222;
+  background-color: #111;
   color: white;
   padding: 1rem;
   display: flex;
@@ -349,7 +374,7 @@ footer {
       h1 {
         font-size: 5rem;
         // font-size: xxx-large;
-        text-shadow: var(--contoureText);
+        // text-shadow: var(--contoureText);
       }
       h3 {
         p {

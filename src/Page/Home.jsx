@@ -10,6 +10,13 @@ export default function Home({ setNumMenu }) {
   }, []);
   return (
     <div className="home">
+      <div class="container-titre">
+			    <h1><span>Produits</span>
+          <br/>sidérurgiques</h1>
+      <video playsinline="" autoplay="true" loop="true" muted="true" poster="https://www.loppinetjean.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/cochetconcept/video/BG-video.jpg.webp" id="bgvid">
+			    <source src="https://www.loppinetjean.com/wp-content/themes/cochetconcept/video/BG-loppin-jean.mp4" type="video/mp4"/>
+			</video>
+		    </div>
       <section>
         <h2>
           Produits{" "}
