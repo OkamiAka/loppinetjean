@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 import Img from "../assets/Produits Sidérurgiques.webp";
@@ -26,9 +27,17 @@ export default function Home({ setNumMenu }) {
 			    </video>
 		    </div>
       {VideoBLM&&
-        <div className="videoBlm" onClick={()=>setVideoBLM(false)}>
-        <iframe src="https://www.youtube.com/watch?v=9ELpNmuW52s"/>
-        </div> 
+      <div className="videoBlm" onClick={()=>setVideoBLM(false)}>
+              <ReactPlayer
+              url="https://www.youtube.com/watch?v=9ELpNmuW52s"
+              controls
+              playing
+              muted
+              onEnded={()=>setVideoBLM(false)}
+              width={"60%"}
+              height={"70.5%"}
+              />
+			    </div>
         }
       <section>
         <h2>

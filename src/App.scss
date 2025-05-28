@@ -146,6 +146,10 @@ button {
     align-content: center;
     align-items: center;
     background-color: transparentize($color: #000000, $amount: 0.1);
+    text-size-adjust: 1rem;
+    .Video{
+      width: 100%;
+    }
   }
   section {
     // border: solid 0.2rem var(--color-primaire-loppin);
